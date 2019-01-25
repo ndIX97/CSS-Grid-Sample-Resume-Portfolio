@@ -1,0 +1,215 @@
+body {
+    background-color: #b0aea7;
+    background: linear-gradient(to left, #908f88, #e5e2d9)
+}
+
+.grid-container {
+    margin: 30px;
+    background-color: #bcbcbc;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    outline: none;
+}
+
+.left {
+    display: grid;
+    background-color: #2d2d2d;
+    color: #fcfcfc;
+    padding: 20px 15px;
+}
+
+.left img.profile-img {
+    width: 120px;
+    border: 0.1em solid #fcfcfc;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+}
+
+.left .title-label {
+    font-family: 'Code Thin';
+    letter-spacing: 6px;
+}
+
+.left .title-label::after {
+    background-color: #fcfcfc;
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 110%;
+    height: 1px;
+}
+
+.title-details {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.left .fa {
+    grid-row: span 2;
+    font-size: 2em;
+    align-items: center;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.left .detail-label {
+    color: #f3f3f3;
+    font-family: 'Hero';
+    font-size: 0.9em;
+    margin-bottom: 1px;
+}
+
+.left .detail-label-value {
+    color: #a8a8a8;
+    font-family: 'Raleway';
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.right {
+    background-color: #fff;
+    padding-left: 12px;
+}
+
+.right .name {
+    font-family: 'Arial Black';
+    margin-top: 55px;
+    font-size: 2.3em;
+}
+
+.right .subname {
+    font-family: Raleway;
+    font-size: 1.3em;
+    color: #474747;
+    position: relative;
+    top: -25px;
+    text-transform: uppercase;
+}
+
+.right .right-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 9fr;
+    position: relative;
+    top: -15px;
+
+}
+
+.right .fa {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #090909;
+    background-color: #fff;
+    font-size: 1.5em;
+    border: 1.2px solid #3a3a3a;
+    border-radius: 50%;
+    line-height: 1.6em;
+    grid-row: span 2;
+    margin: 0 auto;
+}
+
+.right .fa::after {
+    width: 1px;
+    height: 200px;
+    content: '';
+    background-color: #3a3a3a;
+    display: block;
+    margin: 0 auto;
+}
+
+.right .title-label-right {
+    grid-column: span 2;
+    color: #090909;
+    font-family: 'ADAM.CG PRO';
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    font-weight: 100px;
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+
+}
+
+.right .title-label-right::after {
+    background-color: #090909;
+    content: '';
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    height: .5px;
+}
+
+.right .skills {
+    grid-column: 2 / -1;
+    padding: 0px;
+    margin: 0 10px 0 5px;
+    position: relative;
+    top: -10px;
+    font: 1em Raleway;
+    letter-spacing: 2px;
+}
+
+.right .year-label {
+    grid-column: 2 / 3;
+    margin: 0 auto;
+    font: 1em Raleway;
+    grid-row: span 2;
+}
+
+
+.right .year-content {
+    grid-column: 3 / -1;
+    margin: 0;
+    font: 1em Hero;
+    padding: 0 10px;
+}
+
+.right .year-content-detail {
+    grid-column: 3 / -1;
+    font-family: 'Raleway';
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+@media (max-width : 600px) {
+
+    * {
+        margin: 0;
+    }
+
+    .grid-container {
+        width: 600px;
+        height: auto;
+        margin: 0;
+
+    }
+
+    .left {
+        padding: 10px;
+
+
+    }
+
+    .right {
+        /* height: 980px; */
+        height: 147vh;
+    }
+
+    .right .name {
+        margin-top: 55px;
+        font-size: 1.3em;
+    }
+
+    .right .subname {
+        font-size: 1.2em;
+        top: -5px;
+    }
+
+    .right .right-content {
+        top: 40px;
+
+    }
+}
